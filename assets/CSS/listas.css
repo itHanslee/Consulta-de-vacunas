@@ -1,0 +1,83 @@
+
+:root {
+    --color-primario: #198754;
+    --color-secundario: #146c43;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navbar-brand h4 {
+    font-weight: 700;
+    color: white;
+}
+
+.contenedor-principal {
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+}
+
+.pestanas {
+    background-color: var(--color-primario);
+    padding-left: 20px;
+    border-bottom: none;
+}
+
+.pestanas .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-weight: 500;
+    padding: 12px 20px;
+    transition: all 0.3s;
+}
+
+.pestanas .nav-link.active {
+    color: var(--color-primario);
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    border-radius: 8px 8px 0 0;
+}
+
+.pestanas .nav-link:hover:not(.active) {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contenido-pestana {
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-tabla {
+    max-height: calc(100vh - 180px);
+    overflow-y: auto;
+}
+
+.barra-acciones {
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.celda-checkbox {
+    width: 40px;
+}
+
+.badge-estado {
+    font-weight: 500;
+    padding: 5px 10px;
+}

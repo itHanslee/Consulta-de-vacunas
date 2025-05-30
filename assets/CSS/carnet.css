@@ -1,0 +1,67 @@
+:root {
+    --primary: #2e7d32;
+    --primary-dark: #1b5e20;
+    --primary-light: #81c784;
+    --accent: #4caf50;
+    --text: #333;
+    --light: #fff;
+    --danger: #dc3545;
+    --success: #28a745;
+}
+
+.hero-header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: var(--light);
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-box {
+    background-color: #e8f5e9;
+    border-left: 4px solid var(--accent);
+    border-radius: 0 4px 4px 0;
+}
+
+.nav-tabs .nav-link {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.nav-tabs .nav-link.active {
+    color: white;
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.table-primary {
+    --bs-table-bg: var(--primary);
+    --bs-table-striped-bg: #2e7d32;
+    --bs-table-striped-color: #fff;
+    --bs-table-active-bg: #1b5e20;
+    --bs-table-active-color: #fff;
+    --bs-table-hover-bg: #388e3c;
+    --bs-table-hover-color: #fff;
+    color: #fff;
+    border-color: #1b5e20;
+}
+
+.footer {
+    background-color: var(--primary-dark);
+    color: white;
+    border-radius: 0 0 8px 8px;
+}
+
+h2 {
+    color: var(--primary);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: var(--accent);
+}
+
+.badge-custom {
+    background-color: var(--accent);
+    color: white;
+}
